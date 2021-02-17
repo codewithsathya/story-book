@@ -1,7 +1,7 @@
 const path = require("path")
 const express = require("express");
 const mongoose  = require('mongoose')
-const dotenv = require("dotenv");
+// const dotenv = require("dotenv");
 const morgan = require("morgan");
 const exphbs = require("express-handlebars");
 const passport = require('passport')
@@ -10,7 +10,7 @@ const MongoStore = require('connect-mongo')(session);
 const connectDB = require("./config/db");
 
 //load config
-dotenv.config({ path: "./config/config.env" });
+// dotenv.config({ path: "./config/config.env" });
 
 // Passport config
 require('./config/passport')(passport)
